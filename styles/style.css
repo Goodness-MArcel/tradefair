@@ -1,0 +1,719 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    /* padding-top:0 ; */
+}
+
+
+.navbar {
+    padding:0px !important;
+    border-bottom: thin solid rgb(146, 144, 144);
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for navbar when scrolled */
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero_section {
+    height: 100vh;
+    background-position: center;
+    background-image: url(../images/Silo7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border: thin solid black;
+    z-index: 2;
+}
+.hero_section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.navbar {
+    padding: 15px 0;
+    border-bottom: thin solid rgb(146, 144, 144);
+    background-color: transparent;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.logo-img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #DD0A37;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.1rem rgba(255, 255, 255, 0.5);
+}
+
+
+
+.hero_section .hero_content {
+    text-align: center;
+    margin-top: 200px;
+    color: white;
+}
+.hero_content a[href="/buy_ticket"] {
+    padding: 12px 25px;
+    background-color: blue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    color: white;
+    transition: all 0.3s ease-in-out; /* Fixed duration */
+}
+
+.hero_content a[href="/buy_ticket"]:hover {
+    border-radius: 5px;
+    background-color: #520d1c;
+}
+
+section.event {
+    /* border: thin solid black; */
+    height: auto;
+    padding-bottom: 50px;
+}
+.event .event_intro{
+    width: 100%;
+    margin: 0 auto;
+    /* border: thin solid black; */
+    text-align: center;
+}
+section.event .about_event {
+    margin-top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+section.event .about_event span {
+    color:blue;
+} 
+.counter_section{
+    /* border: thin solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 80%;
+    margin: auto;
+    padding-block: 2rem;
+}  
+.counter_section .counter{
+    flex: 0 0 calc(100% - 1.3rem);
+    /* border: thin solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.counter .counter_head{
+    color: #DD0A37;
+}
+
+/* Mission Section Styles */
+section.mission {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.mission .mission_intro {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+section.mission .about_mission {
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+
+section.mission .about_mission span {
+    color: blue;
+}
+
+.mission_paragraph {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.mission_points {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: 80%;
+    margin: auto;
+    padding-block: 2rem;
+}
+
+.mission_points .mission_item {
+    flex: 0 0 calc(100% - 1.3rem);
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.mission_item .mission_head {
+    color:blue;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.mission_item .mission_text {
+    color: #555;
+}
+
+/* Carousel Styles */
+#tradeCarousel {
+    margin-top: 30px;
+    max-width: 800px;
+}
+
+#tradeCarousel .carousel-item img {
+    border-radius: 8px;
+    height: 400px;
+    object-fit: cover;
+}
+.goals_head{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+.goals_head span{
+    color: blue;
+}
+.mission .goal_container {
+    /* border: thin solid black; */
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding-block: 2rem;
+}
+.goal_container .goals{
+    /* border: thin solid black; */
+    width:calc(100% - 1rem);
+    height: auto;
+    display: flex;
+  
+    border-radius: 7px;
+}
+
+.goal_container .svgbox{
+    width: 90px;
+    height: 40px;
+    margin: 0 auto;
+    /* border: thin solid rgb(202, 48, 48); */
+}
+.goals .goal_item{
+    /* border: thin solid greenyellow; */
+    height: 200px;
+
+}
+.goals .goal_item h2{
+    color: blue;
+    font-size: 1.5rem;
+}
+
+/* Event Schedules Section Styles */
+section.schedule {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.schedule .schedule_intro {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+section.schedule .about_schedule {
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+
+section.schedule .about_schedule span {
+    color: blue;
+}
+
+.schedule_paragraph {
+    max-width: 800px;
+    margin: 20px auto 40px;
+}
+
+.events_container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.event_card {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.event_date {
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.event_date .day {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.event_date .month {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.event_date .year {
+    font-size: 16px;
+}
+
+.event_details {
+    padding: 20px;
+}
+
+.event_title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.event_meta {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+.event_description {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.event_meta .bi{
+    color: blue;
+}
+
+.event_button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.event_button:hover {
+    background-color: #0000cc;
+    color: white;
+}
+.getTicket{
+    height: 400px;
+    background-image: url(../images/Silo75.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    place-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+}
+.getTicket::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+.buy_ticket{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out; /* Fixed duration */
+    z-index: 100;
+}
+.buy_ticket:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Contact Section Styles */
+.contact {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .contact_title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+  
+  .contact_title span {
+    color: #1e40af;
+  }
+  
+  .contact_paragraph {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #6c757d;
+  }
+  
+  .contact_info {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+  }
+  
+  .info_item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+  }
+  
+  .info_item i {
+    font-size: 24px;
+    color: #1e40af;
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  
+  .info_item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .info_item p {
+    margin-bottom: 5px;
+    color: #6c757d;
+  }
+  
+  .social_media {
+    margin-top: 30px;
+  }
+  
+  .social_icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social_icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #1e40af;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .social_icons a:hover {
+    background-color: #0f2b76;
+    transform: translateY(-3px);
+  }
+  
+  .map_container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+  }
+  
+  .map_container h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .google_map {
+    border-radius: 8px;
+    overflow: hidden;
+    height: calc(100% - 50px);
+  }
+  
+  .google_map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #212529;
+    color: #fff;
+    padding: 60px 0 20px;
+  }
+  
+  .footer_about img.footer-logo {
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .footer_about p {
+    color: #adb5bd;
+    margin-bottom: 20px;
+  }
+  
+  .footer_links h4,
+  .footer_events h4,
+  .footer_newsletter h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #fff;
+  }
+  
+  .footer_links ul,
+  .footer_events ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer_links ul li,
+  .footer_events ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer_links ul li a,
+  .footer_events ul li a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer_links ul li a:hover,
+  .footer_events ul li a:hover {
+    color: #fff;
+  }
+  
+  .event_date {
+    display: block;
+    font-size: 12px;
+    color:white;
+    margin-bottom: 3px;
+  }
+  
+  .footer_newsletter p {
+    color: #adb5bd;
+    margin-bottom: 15px;
+  }
+  
+  .footer_newsletter form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer_newsletter input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .footer_newsletter button {
+    padding: 10px 15px;
+    background-color: #1e40af;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer_newsletter button:hover {
+    background-color: #0f2b76;
+  }
+  
+  .copyright {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid #343a40;
+  }
+  
+  .copyright p {
+    color: #adb5bd;
+    margin: 0;
+  }
+
+
+/* Media Queries for Event Schedules */
+@media (max-width: 768px) {
+    .contact_info, .map_container {
+      margin-bottom: 30px;
+    }
+    
+    .footer_about, .footer_links, .footer_events, .footer_newsletter {
+      margin-bottom: 40px;
+    }
+  }
+@media screen and (min-width: 768px) {
+    .event_card {
+        flex-direction: row;
+    }
+    
+    .event_date {
+        width: 150px;
+        padding: 20px;
+    }
+    
+    .event_details {
+        flex: 1;
+    }
+    
+    .event_meta {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .hero_content{
+        width: 50%;
+        margin: 0 auto;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .counter_section{
+        padding-block: 4rem;
+    }
+    .counter_section .counter{
+        flex: 0 0 calc(25% - 1.3rem);
+    }
+    
+    .mission_points .mission_item {
+        flex: 0 0 calc(45% - 1.3rem);
+    }
+    .events_container {
+        width: 80%;
+    }
+    
+    .event_title {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .mission_points .mission_item {
+        flex: 0 0 calc(22% - 1.3rem);
+    }
+    .goal_container .goals{
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .mission .goal_container {
+        width: 80%;
+    }
+}
