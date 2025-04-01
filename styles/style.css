@@ -73,7 +73,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #DD0A37;
+    color: blue;
 }
 
 .navbar-toggler {
@@ -149,7 +149,7 @@ section.event .about_event span {
 
 }
 .counter .counter_head{
-    color: #DD0A37;
+    color:blue;
 }
 
 /* Mission Section Styles */
