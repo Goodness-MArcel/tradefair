@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 *{
     margin: 0;
@@ -15,15 +15,13 @@ body {
 .navbar {
     padding:0px !important;
     border-bottom: thin solid rgb(146, 144, 144);
-    background-color: transparent;
+    background-color: black !important;
     transition: background-color 0.3s ease;
+    min-height: 40px;
 }
 
 /* Style for navbar when scrolled */
-.navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.9) !important;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+
 
 .hero_section {
     height: 100vh;
@@ -57,23 +55,25 @@ body {
 .navbar-brand {
     padding: 0;
 }
-
+.navbar-toggler-icon{
+    border: thi solid black;
+}
 .logo-img {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
 }
 
 .navbar-nav .nav-link {
-    color: white;
+    color:blue;
     font-size: 13px;
     text-transform: uppercase;
-    padding: 10px 15px;
+    padding: 8px 15px;
     transition: all 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: blue;
+    color:black;
 }
 
 .navbar-toggler {
@@ -85,11 +85,35 @@ body {
 }
 
 
-
-.hero_section .hero_content {
+.hero_content h1{
+    font-family: "Lora", serif;
+    text-transform: uppercase;
+}
+/* Fix for hero content positioning with AOS */
+/* .hero_section .hero_content {
     text-align: center;
     margin-top: 200px;
     color: white;
+} */
+.hero_section .hero_content {
+    opacity: 1;
+    transform: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+    max-width: 800px;
+    z-index: 10;
+}
+[data-aos=fade-up] {
+    transform: translate3d(0, 20px, 0);
+}
+
+.hero_section [data-aos=fade-up] {
+    transform: translate3d(0, 0, 0);
 }
 .hero_content a[href="/buy_ticket"] {
     padding: 12px 25px;
@@ -118,12 +142,12 @@ section.event {
     text-align: center;
 }
 section.event .about_event {
-    margin-top: 100px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 42px;
-    font-weight: 900;
-    font-family: 'Poppins', sans-serif;
+    margin-top: 70px;
+    text-transform: capitalize;
 }
 section.event .about_event span {
     color:blue;
@@ -168,9 +192,9 @@ section.mission {
 section.mission .about_mission {
     margin-top: 50px;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 42px;
-    font-weight: 900;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: capitalize;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -225,12 +249,12 @@ section.mission .about_mission span {
     object-fit: cover;
 }
 .goals_head{
-    text-align: center;
-    font-size: 42px;
-    font-weight: 900;
-    font-family: 'Poppins', sans-serif;
     margin-top: 50px;
-    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
 }
 .goals_head span{
     color: blue;
@@ -250,10 +274,15 @@ section.mission .about_mission span {
 .goal_container .goals{
     /* border: thin solid black; */
     width:calc(100% - 1rem);
-    height: auto;
-    display: flex;
-  
+    /* height: auto; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center; */
+    /* padding: 20px; */
     border-radius: 7px;
+    place-content: center !important;
+    border: thin solid blue !important;
 }
 
 .goal_container .svgbox{
@@ -277,7 +306,6 @@ section.schedule {
     padding: 50px 0;
     background-color: #fff;
 }
-
 .schedule .schedule_intro {
     width: 100%;
     margin: 0 auto;
@@ -288,9 +316,9 @@ section.schedule {
 section.schedule .about_schedule {
     margin-top: 50px;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 42px;
-    font-weight: 900;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: capitalize;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -400,6 +428,72 @@ section.schedule .about_schedule span {
     background-color: #0000cc;
     color: white;
 }
+
+/* Vendor Consideration Section Styling */
+.vendor_consideration {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .vendor_consideration:hover {
+    transform: translateY(-5px);
+  }
+  
+  .consideration_title {
+    color: #0047ab;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .consideration_title:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #0047ab;
+  }
+  
+  .consideration_text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .consideration_text strong {
+    color: #0047ab;
+    font-weight: 600;
+  }
+  
+  /* Style the numbered points */
+  .vendor_consideration ol {
+    padding-left: 20px;
+    margin-top: 15px;
+  }
+  
+  .vendor_consideration li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 5px;
+  }
+  
+  /* Emoji styling */
+  .consideration_text .emoji {
+    font-size: 18px;
+    vertical-align: middle;
+    margin: 0 3px;
+  }
+  
 .getTicket{
     height: 400px;
     background-image: url(../images/Silo75.jpg);
@@ -556,7 +650,7 @@ section.schedule .about_schedule span {
   }
   
   .footer_about img.footer-logo {
-    height: 60px;
+    height: 120px;
     margin-bottom: 20px;
   }
   
@@ -679,11 +773,16 @@ section.schedule .about_schedule span {
     }
 }
 @media screen and (min-width: 1024px) {
-    .hero_content{
+    .navbar.scrolled {
+        background-color: white !important;
+        color: blue !important;
+        box-shadow: 0 2px 10px rgba(69, 65, 65, 0.1);
+    }
+    .hero_content {
         width: 50%;
         margin: 0 auto;
         position: absolute;
-        top: 20%;
+        top: 50%; /* Changed from 20% to 50% for better centering */
         left: 50%;
         transform: translate(-50%, -50%);
     }

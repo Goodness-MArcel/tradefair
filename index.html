@@ -14,53 +14,81 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <!-- AOS CSS -->
+    <!-- Add this in the head section -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="hero_section">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="./images/IMG-20250331-WA0003.jpg" alt="Logo" class="logo-img">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#event">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#mission">Mission</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#events">Events</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="Logo" class="logo-img" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler-icon"
+            
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#event">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mission">Mission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#events">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <div class="hero_content">
-        <h1>A brand that host trade shows within the high institutions globally.</h1>
-        <p>
-          A brand that host trade shows within the high institutions globally to enable students to buy products needed to them at prices lower than the regular market price. Thereby  helping small business owners achieve their long time sales goals in few days Added to the just listed. We also create a fun and entertaining environment for the students.
-
+        <h1 class="animate__animated animate__fadeIn">
+          silo campus tradefair. Number 1 campus tradefair brand in africa
+        </h1>
+        <p class="animate__animated animate__fadeIn animate__delay-1s">
+          A brand that host trade shows within the high institutions globally to
+          enable students to buy products needed to them at prices lower than
+          the regular market price. Thereby helping small business owners
+          achieve their long time sales goals in few days Added to the just
+          listed. We also create a fun and entertaining environment for the
+          students.
         </p>
         <br /><br />
-        <a href="/buy_ticket">buy ticket</a>
+        <a
+          href="/buy_ticket"
+          class="animate__animated animate__fadeIn animate__delay-2s"
+          >become a vendor</a
+        >
       </div>
     </div>
     <section class="event" id="event">
       <div class="event_intro">
-        <h1 class="about_event">about <span>event</span></h1>
+        <h1 class="about_event">upcoming campus <span>tradefairs</span></h1>
         <p class="event_paragraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolorum
           eligendi, quaerat culpa suscipit deleniti eveniet. Id, iure corporis
@@ -71,23 +99,24 @@
         </p>
       </div>
       <div class="counter_section">
-        <div class="counter">
+        <div class="counter" data-aos="fade-up" data-aos-delay="100">
           <h2 class="counter_head">960+</h2>
+          <p class="counter_text">days</p>
+        </div>
+        <div class="counter" data-aos="fade-up" data-aos-delay="200">
+          <h2 class="counter_head">800+</h2>
           <p class="counter_text">Hours</p>
         </div>
-        <div class="counter">
-          <h2 class="counter_head">800+</h2>
-          <p class="counter_text">Venues</p>
-        </div>
-        <div class="counter">
+        <div class="counter" data-aos="fade-up" data-aos-delay="300">
           <h2 class="counter_head">53+</h2>
-          <p class="counter_text">Country</p>
+          <p class="counter_text">minutes</p>
         </div>
-        <div class="counter">
+        <!-- <div class="counter" data-aos="fade-up" data-aos-delay="400">
           <h2 class="counter_head">21+</h2>
           <p class="counter_text">Speakers</p>
-        </div>
+        </div> -->
       </div>
+
       <div
         id="tradeCarousel"
         class="carousel slide container"
@@ -106,6 +135,7 @@
               src="./images/Silo12.jpg"
               class="d-block w-100"
               alt="Trade Fair Image 2"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item">
@@ -113,6 +143,7 @@
               src="./images/Silo7.jpg"
               class="d-block w-100"
               alt="Trade Fair Image 3"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item">
@@ -120,6 +151,7 @@
               src="./images/Silo70.jpg"
               class="d-block w-100"
               alt="Trade Fair Image 3"
+              loading="lazy"
             />
           </div>
         </div>
@@ -148,145 +180,366 @@
     </section>
     <!-- mission section starts here -->
     <section class="mission" id="mission">
-      <div class="mission_intro">
-        <h1 class="about_mission">our <span>mission</span></h1>
-        <p class="mission_paragraph">
-          To 10x the sales revenue of over 100 SMEs annually, empowering them with scalable strategies, cutting-edge technology, and data-driven insights. By doing so, we aim to create a lasting positive impact in the Small and Medium Enterprises (SME) sector globally—fostering job creation, economic growth, and sustainable business success. Our mission is to transform SMEs into industry leaders, ensuring they thrive in competitive markets and contribute meaningfully to local and global economies.
+      <div class="mission_intro" data-aos="fade-up">
+        <h1 class="about_mission" data-aos="fade-up">
+          our <span>mission</span>
+        </h1>
+        <p class="mission_paragraph" data-aos="fade-up" data-aos-delay="200">
+          To 10x the sales revenue of over 100 SMEs annually, empowering them
+          with scalable strategies, cutting-edge technology, and data-driven
+          insights. By doing so, we aim to create a lasting positive impact in
+          the Small and Medium Enterprises (SME) sector globally—fostering job
+          creation, economic growth, and sustainable business success. Our
+          mission is to transform SMEs into industry leaders, ensuring they
+          thrive in competitive markets and contribute meaningfully to local and
+          global economies.
         </p>
       </div>
       <div class="mission_points">
-        <div class="mission_item">
+        <div class="mission_item" data-aos="zoom-in" data-aos-delay="100">
           <h2 class="mission_head">Integrity</h2>
           <p class="mission_text">
-            We believe that sustainable growth is built on trust, transparency, and ethical action. In our mission to 10x the revenue of SMEs globall.
+            We believe that sustainable growth is built on trust, transparency,
+            and ethical action. In our mission to 10x the revenue of SMEs
+            globall.
           </p>
         </div>
         <div class="mission_item">
           <h2 class="mission_head">Collaboration</h2>
           <p class="mission_text">
-            Together, we unlock exponential growth—partnering with SMEs, experts, and communities to build success beyond what any one can achieve alone
+            Together, we unlock exponential growth—partnering with SMEs,
+            experts, and communities to build success beyond what any one can
+            achieve alone
           </p>
         </div>
         <div class="mission_item">
           <h2 class="mission_head">Excellence</h2>
           <p class="mission_text">
-            Relentless pursuit of exceptional results—delivering scalable, innovative strategies that redefine growth for SMEs, every time.
+            Relentless pursuit of exceptional results—delivering scalable,
+            innovative strategies that redefine growth for SMEs, every time.
           </p>
         </div>
         <div class="mission_item">
           <h2 class="mission_head">compassion</h2>
           <p class="mission_text">
-            We grow with heart—understanding each SME's unique journey and empowering them with both strategy and support to thrive in their business landscape.
+            We grow with heart—understanding each SME's unique journey and
+            empowering them with both strategy and support to thrive in their
+            business landscape.
           </p>
         </div>
         <div class="mission_item">
           <h2 class="mission_head">innovation</h2>
           <p class="mission_text">
-            We disrupt stagnation—pioneering smarter, faster ways for SMEs to scale, because yesterday’s solutions won’t fuel tomorrow’s growth
+            We disrupt stagnation—pioneering smarter, faster ways for SMEs to
+            scale, because yesterday’s solutions won’t fuel tomorrow’s growth
           </p>
         </div>
         <div class="mission_item">
           <h2 class="mission_head">creativity</h2>
           <p class="mission_text">
-            We turn constraints into springboards—crafting bold, unexpected strategies that propel SMEs beyond conventional growth ceilings.
+            We turn constraints into springboards—crafting bold, unexpected
+            strategies that propel SMEs beyond conventional growth ceilings.
           </p>
         </div>
       </div>
       <div class="goals text-center">
         <h1 class="goals_head">our <span>goals</span></h1>
         <p class="goals_text">
-          We empower 100+ business owners annually with scaling skills and resilience <br> to drive sustainable growth, while catalyzing economic vitality through scalable opportunities for SMEs to thrive globally
+          We empower 500+ business owners annually with scaling skills and
+          resilience <br />
+          to drive sustainable growth, while catalyzing economic vitality
+          through scalable opportunities for SMEs to thrive globally
         </p>
         <div class="goal_container">
           <div class="goals border p-2">
             <div class="svgbox">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50" height="50">
-                  <!-- Background circle -->
-                  <circle cx="256" cy="256" r="250" fill="#f0f4f9" stroke="#1e40af" stroke-width="6"/>
-                  
-                  <!-- Target rings -->
-                  <circle cx="256" cy="256" r="200" fill="white" stroke="#1e40af" stroke-width="4"/>
-                  <circle cx="256" cy="256" r="150" fill="#e6effd" stroke="#1e40af" stroke-width="4"/>
-                  <circle cx="256" cy="256" r="100" fill="#c7dbfc" stroke="#1e40af" stroke-width="4"/>
-                  <circle cx="256" cy="256" r="50" fill="#93b8f9" stroke="#1e40af" stroke-width="4"/>
-                  <circle cx="256" cy="256" r="20" fill="#1e40af"/>
-                  
-                  <!-- Arrow -->
-                  <line x1="430" y1="120" x2="270" y2="240" stroke="#1e40af" stroke-width="8" stroke-linecap="round"/>
-                  
-                  <!-- Arrow head -->
-                  <polygon points="256,256 280,230 290,250" fill="#1e40af"/>
-                  
-                  <!-- Flag on top -->
-                  <rect x="240" y="50" width="5" height="80" fill="#1e40af"/>
-                  <polygon points="245,50 245,80 275,65 245,50" fill="#1e40af"/>
-                  
-                  <!-- Text elements -->
-                  <text x="256" y="350" font-family="Arial" font-size="24" fill="#1e40af" text-anchor="middle" font-weight="bold">MISSION</text>
-                  <text x="256" y="380" font-family="Arial" font-size="18" fill="#1e40af" text-anchor="middle">EXCELLENCE</text>
-                  
-                  <!-- Small stars for decoration -->
-                  <polygon points="400,200 405,210 415,212 407,220 410,230 400,225 390,230 393,220 385,212 395,210" fill="#1e40af"/>
-                  <polygon points="120,180 125,190 135,192 127,200 130,210 120,205 110,210 113,200 105,192 115,190" fill="#1e40af"/>
-                  <polygon points="150,350 155,360 165,362 157,370 160,380 150,375 140,380 143,370 135,362 145,360" fill="#1e40af"/>
-                </svg>
-              </div>
-              
-            <div class="goal_item ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                width="50"
+                height="50"
+              >
+                <!-- Background circle -->
+                <circle
+                  cx="256"
+                  cy="256"
+                  r="250"
+                  fill="#f0f4f9"
+                  stroke="#1e40af"
+                  stroke-width="6"
+                />
+
+                <!-- Target rings -->
+                <circle
+                  cx="256"
+                  cy="256"
+                  r="200"
+                  fill="white"
+                  stroke="#1e40af"
+                  stroke-width="4"
+                />
+                <circle
+                  cx="256"
+                  cy="256"
+                  r="150"
+                  fill="#e6effd"
+                  stroke="#1e40af"
+                  stroke-width="4"
+                />
+                <circle
+                  cx="256"
+                  cy="256"
+                  r="100"
+                  fill="#c7dbfc"
+                  stroke="#1e40af"
+                  stroke-width="4"
+                />
+                <circle
+                  cx="256"
+                  cy="256"
+                  r="50"
+                  fill="#93b8f9"
+                  stroke="#1e40af"
+                  stroke-width="4"
+                />
+                <circle cx="256" cy="256" r="20" fill="#1e40af" />
+
+                <!-- Arrow -->
+                <line
+                  x1="430"
+                  y1="120"
+                  x2="270"
+                  y2="240"
+                  stroke="#1e40af"
+                  stroke-width="8"
+                  stroke-linecap="round"
+                />
+
+                <!-- Arrow head -->
+                <polygon points="256,256 280,230 290,250" fill="#1e40af" />
+
+                <!-- Flag on top -->
+                <rect x="240" y="50" width="5" height="80" fill="#1e40af" />
+                <polygon points="245,50 245,80 275,65 245,50" fill="#1e40af" />
+
+                <!-- Text elements -->
+                <text
+                  x="256"
+                  y="350"
+                  font-family="Arial"
+                  font-size="24"
+                  fill="#1e40af"
+                  text-anchor="middle"
+                  font-weight="bold"
+                >
+                  MISSION
+                </text>
+                <text
+                  x="256"
+                  y="380"
+                  font-family="Arial"
+                  font-size="18"
+                  fill="#1e40af"
+                  text-anchor="middle"
+                >
+                  EXCELLENCE
+                </text>
+
+                <!-- Small stars for decoration -->
+                <polygon
+                  points="400,200 405,210 415,212 407,220 410,230 400,225 390,230 393,220 385,212 395,210"
+                  fill="#1e40af"
+                />
+                <polygon
+                  points="120,180 125,190 135,192 127,200 130,210 120,205 110,210 113,200 105,192 115,190"
+                  fill="#1e40af"
+                />
+                <polygon
+                  points="150,350 155,360 165,362 157,370 160,380 150,375 140,380 143,370 135,362 145,360"
+                  fill="#1e40af"
+                />
+              </svg>
+            </div>
+
+            <div class="goal_item">
               <h2 class="goal_head text-start">Thrive</h2>
               <p class="goal_text">
-                Creating opportunities for business scaling, fostering growth, innovation, and sustainability to buoy the economy.
+                Creating opportunities for business scaling for the
+                buoyancy of the econom
               </p>
             </div>
           </div>
           <div class="goals border p-2">
             <div class="svgbox">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50" height="50">
-                  <!-- Background -->
-                  <rect x="0" y="0" width="512" height="512" rx="30" ry="30" fill="#f0f7ff"/>
-                  
-                  <!-- Mountain peaks representing challenges and goals -->
-                  <polygon points="0,400 150,180 220,280 320,120 420,250 512,150 512,512 0,512" fill="#e0edff" stroke="#0047ab" stroke-width="3"/>
-                  
-                  <!-- Person climbing/reaching the summit -->
-                  <circle cx="320" cy="120" r="15" fill="#0047ab"/>
-                  <line x1="320" y1="135" x2="320" y2="170" stroke="#0047ab" stroke-width="5"/>
-                  <line x1="320" y1="150" x2="300" y2="180" stroke="#0047ab" stroke-width="5"/>
-                  <line x1="320" y1="150" x2="340" y2="180" stroke="#0047ab" stroke-width="5"/>
-                  <line x1="320" y1="170" x2="310" y2="210" stroke="#0047ab" stroke-width="5"/>
-                  <line x1="320" y1="170" x2="330" y2="210" stroke="#0047ab" stroke-width="5"/>
-                  
-                  <!-- Flag at the summit -->
-                  <line x1="340" y1="90" x2="340" y2="120" stroke="#0047ab" stroke-width="3"/>
-                  <polygon points="340,90 340,110 370,100 340,90" fill="#0047ab"/>
-                  
-                  <!-- Path to the top -->
-                  <path d="M100,400 Q150,350 180,360 Q220,370 250,320 Q280,270 300,280 Q320,290 320,120" 
-                        fill="none" stroke="#0047ab" stroke-width="3" stroke-dasharray="5,5"/>
-                  
-                  <!-- Compass -->
-                  <circle cx="430" cy="80" r="30" fill="white" stroke="#0047ab" stroke-width="2"/>
-                  <circle cx="430" cy="80" r="3" fill="#0047ab"/>
-                  <line x1="430" y1="80" x2="430" y2="60" stroke="#0047ab" stroke-width="2"/>
-                  <line x1="430" y1="80" x2="450" y2="80" stroke="#0047ab" stroke-width="2"/>
-                  <line x1="430" y1="80" x2="430" y2="100" stroke="#0047ab" stroke-width="1"/>
-                  <line x1="430" y1="80" x2="410" y2="80" stroke="#0047ab" stroke-width="1"/>
-                  <polygon points="430,60 425,65 435,65" fill="#0047ab"/>
-                  
-                  <!-- Motivational text -->
-                  <text x="256" y="450" font-family="Arial" font-size="24" fill="#0047ab" text-anchor="middle" font-weight="bold">REACH YOUR GOALS</text>
-                  
-                  <!-- Stars representing achievements -->
-                  <polygon points="150,180 155,170 165,168 157,160 159,150 150,155 141,150 143,160 135,168 145,170" fill="#0047ab"/>
-                  <polygon points="220,280 225,270 235,268 227,260 229,250 220,255 211,250 213,260 205,268 215,270" fill="#0047ab"/>
-                  <polygon points="420,250 425,240 435,238 427,230 429,220 420,225 411,220 413,230 405,238 415,240" fill="#0047ab"/>
-                </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                width="50"
+                height="50"
+              >
+                <!-- Background -->
+                <rect
+                  x="0"
+                  y="0"
+                  width="512"
+                  height="512"
+                  rx="30"
+                  ry="30"
+                  fill="#f0f7ff"
+                />
+
+                <!-- Mountain peaks representing challenges and goals -->
+                <polygon
+                  points="0,400 150,180 220,280 320,120 420,250 512,150 512,512 0,512"
+                  fill="#e0edff"
+                  stroke="#0047ab"
+                  stroke-width="3"
+                />
+
+                <!-- Person climbing/reaching the summit -->
+                <circle cx="320" cy="120" r="15" fill="#0047ab" />
+                <line
+                  x1="320"
+                  y1="135"
+                  x2="320"
+                  y2="170"
+                  stroke="#0047ab"
+                  stroke-width="5"
+                />
+                <line
+                  x1="320"
+                  y1="150"
+                  x2="300"
+                  y2="180"
+                  stroke="#0047ab"
+                  stroke-width="5"
+                />
+                <line
+                  x1="320"
+                  y1="150"
+                  x2="340"
+                  y2="180"
+                  stroke="#0047ab"
+                  stroke-width="5"
+                />
+                <line
+                  x1="320"
+                  y1="170"
+                  x2="310"
+                  y2="210"
+                  stroke="#0047ab"
+                  stroke-width="5"
+                />
+                <line
+                  x1="320"
+                  y1="170"
+                  x2="330"
+                  y2="210"
+                  stroke="#0047ab"
+                  stroke-width="5"
+                />
+
+                <!-- Flag at the summit -->
+                <line
+                  x1="340"
+                  y1="90"
+                  x2="340"
+                  y2="120"
+                  stroke="#0047ab"
+                  stroke-width="3"
+                />
+                <polygon
+                  points="340,90 340,110 370,100 340,90"
+                  fill="#0047ab"
+                />
+
+                <!-- Path to the top -->
+                <path
+                  d="M100,400 Q150,350 180,360 Q220,370 250,320 Q280,270 300,280 Q320,290 320,120"
+                  fill="none"
+                  stroke="#0047ab"
+                  stroke-width="3"
+                  stroke-dasharray="5,5"
+                />
+
+                <!-- Compass -->
+                <circle
+                  cx="430"
+                  cy="80"
+                  r="30"
+                  fill="white"
+                  stroke="#0047ab"
+                  stroke-width="2"
+                />
+                <circle cx="430" cy="80" r="3" fill="#0047ab" />
+                <line
+                  x1="430"
+                  y1="80"
+                  x2="430"
+                  y2="60"
+                  stroke="#0047ab"
+                  stroke-width="2"
+                />
+                <line
+                  x1="430"
+                  y1="80"
+                  x2="450"
+                  y2="80"
+                  stroke="#0047ab"
+                  stroke-width="2"
+                />
+                <line
+                  x1="430"
+                  y1="80"
+                  x2="430"
+                  y2="100"
+                  stroke="#0047ab"
+                  stroke-width="1"
+                />
+                <line
+                  x1="430"
+                  y1="80"
+                  x2="410"
+                  y2="80"
+                  stroke="#0047ab"
+                  stroke-width="1"
+                />
+                <polygon points="430,60 425,65 435,65" fill="#0047ab" />
+
+                <!-- Motivational text -->
+                <text
+                  x="256"
+                  y="450"
+                  font-family="Arial"
+                  font-size="24"
+                  fill="#0047ab"
+                  text-anchor="middle"
+                  font-weight="bold"
+                >
+                  REACH YOUR GOALS
+                </text>
+
+                <!-- Stars representing achievements -->
+                <polygon
+                  points="150,180 155,170 165,168 157,160 159,150 150,155 141,150 143,160 135,168 145,170"
+                  fill="#0047ab"
+                />
+                <polygon
+                  points="220,280 225,270 235,268 227,260 229,250 220,255 211,250 213,260 205,268 215,270"
+                  fill="#0047ab"
+                />
+                <polygon
+                  points="420,250 425,240 435,238 427,230 429,220 420,225 411,220 413,230 405,238 415,240"
+                  fill="#0047ab"
+                />
+              </svg>
             </div>
-              
+
             <div class="goal_item text-center">
               <h2 class="goal_head text-start">Empower</h2>
               <p class="goal_text">
-                Building capacity and tenacity for business owners, strengthening their mindset, skills, and operations to confidently scale and thrive.
+                Building capacity and tenacity for business owners and get them
+                ready to scale
               </p>
             </div>
           </div>
@@ -295,230 +548,305 @@
     </section>
 
     <!-- Event Schedules Section -->
-<section class="schedule" id="schedule">
-    <div class="schedule_intro">
-      <h1 class="about_schedule">upcoming <span>events</span></h1>
-      <p class="schedule_paragraph">
-        Join us at our upcoming events, where industry leaders, scaling experts, and visionary entrepreneurs converge to share battle-tested growth strategies, forge powerful connections, and unlock scalable opportunities. Mark your calendar—your next breakthrough starts here.
-      </p>
-    </div>
-    
-    <div class="events_container" id="events">
-      <!-- Event 1 -->
-      <div class="event_card">
-        <div class="event_date">
-          <span class="day" style="font-size: .6rem;">2 <sup>nd</sup>. 3 <sup>th</sup></span>
-          <span class="month">JUN</span>
-          <span class="year">2025</span>
-        </div>
-        <div class="event_details">
-          <h3 class="event_title">Business Innovation Summit</h3>
-          <div class="event_meta">
-            <p><i class="bi bi-clock"></i> 9:00 AM - 5:00 PM</p>
-            <p><i class="bi bi-geo-alt"></i> Grand Convention Center, Lagos</p>
-          </div>
-          <p class="event_description">
-            Explore cutting-edge business strategies and network with industry leaders. 
-            This summit features keynote speakers, panel discussions, and interactive workshops.
-          </p>
-          <a href="#" class="event_button">Register Now</a>
-        </div>
-      </div>
-      
-      <!-- Event 2 -->
-      <div class="event_card">
-        <div class="event_date">
-          <span class="day">22</span>
-          <span class="month">JUL</span>
-          <span class="year">2023</span>
-        </div>
-        <div class="event_details">
-          <h3 class="event_title">Silo Campus Tradefair uniport edition</h3>
-          <div class="event_meta">
-            <p><i class="bi bi-clock"></i> 09:00 AM - 3:00 PM</p>
-            <p><i class="bi bi-geo-alt"></i> Old convention Arena</p>
-          </div>
-          <p class="event_description">
-            A hands-on workshop for aspiring tech entrepreneurs. Learn about funding opportunities, 
-            product development, and go-to-market strategies from successful founders.
-          </p>
-          <a href="#" class="event_button">Register Now</a>
-        </div>
-      </div>
-      
-      <!-- Event 3 -->
-      <div class="event_card">
-        <div class="event_date">
-          <span class="day">10</span>
-          <span class="month">AUG</span>
-          <span class="year">2023</span>
-        </div>
-        <div class="event_details">
-          <h3 class="event_title">Global Trade Expo</h3>
-          <div class="event_meta">
-            <p><i class="bi bi-clock"></i> 8:00 AM - 6:00 PM</p>
-            <p><i class="bi bi-geo-alt"></i> International Trade Center, Port Harcourt</p>
-          </div>
-          <p class="event_description">
-            Connect with international buyers, suppliers, and partners at this premier trade exhibition. 
-            Showcase your products and discover new market opportunities.
-          </p>
-          <a href="#" class="event_button">Register Now</a>
-        </div>
-      </div>
-    </div>
-    <div class="getTicket text-light text-capitalize">
-      <h1 class="text-light">Get Tickets now</h1>
-      <p>Secure your spot to learn scaling strategies from <br>top industry leaders, connect with growth-driven entrepreneurs, and unlock  tools to 10x your business. Limited seats available!</p>
-      <br>
-      <a href="" class="buy_ticket">buy ticket </a>
-    </div>
-  </section>
-  <!-- Contact Us Section -->
-<section class="contact" id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center mb-5">
-        <h1 class="contact_title">contact <span>us</span></h1>
-        <p class="contact_paragraph">
-          Have questions about our trade fairs or want to participate? Reach out to us through any of the channels below. We're here to help you make the most of our events.
+    <section class="schedule" id="schedule">
+      <div class="schedule_intro">
+        <h1 class="about_schedule">upcoming <span>events</span></h1>
+        <p class="schedule_paragraph">
+          Join us at our upcoming events, where industry leaders, scaling
+          experts, and visionary entrepreneurs converge to share battle-tested
+          growth strategies, forge powerful connections, and unlock scalable
+          opportunities. Mark your calendar—your next breakthrough starts here.
         </p>
       </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-lg-6 mb-4">
-        <div class="contact_info">
-          <div class="info_item">
-            <i class="bi bi-geo-alt-fill"></i>
-            <div>
-              <h3>Our Location</h3>
-              <p>53 control avenue behind Arizona hotel, Owerri, IMO state</p>
-            </div>
+
+      <div class="events_container" id="events">
+        <!-- Event 1 -->
+        <div class="event_card" data-aos="fade-up">
+          <div class="event_date">
+            <span class="day" style="font-size: 0.6rem"
+              >2 <sup>nd</sup>. 3 <sup>th</sup></span
+            >
+            <span class="month">JUN</span>
+            <span class="year">2025</span>
           </div>
-          
-          <div class="info_item">
-            <i class="bi bi-telephone-fill"></i>
-            <div>
-              <h3>Call Us</h3>
-              <p>+234 703 864 3290
+          <div class="event_details">
+            <h3 class="event_title">Business Innovation Summit</h3>
+            <div class="event_meta">
+              <p><i class="bi bi-clock"></i> 9:00 AM - 5:00 PM</p>
+              <p>
+                <i class="bi bi-geo-alt"></i> Grand Convention Center, Lagos
               </p>
-              <p>+234 904 301 5351</p>
             </div>
-          </div>
-          
-          <div class="info_item">
-            <i class="bi bi-envelope-fill"></i>
-            <div>
-              <h3>Email Us</h3>
-              <p>silocampustradefair@gmail.com</p>
-            </div>
-          </div>
-          
-          <div class="info_item">
-            <i class="bi bi-clock-fill"></i>
-            <div>
-              <h3>Office Hours</h3>
-              <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-              <p>Saturday: 10:00 AM - 2:00 PM</p>
-            </div>
-          </div>
-          
-          <div class="social_media">
-            <h3>Connect With Us</h3>
-            <div class="social_icons">
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
+            <p class="event_description">
+              Explore cutting-edge business strategies and network with industry
+              leaders. This summit features keynote speakers, panel discussions,
+              and interactive workshops.
+            </p>
+            <a href="#" class="event_button">Register Now</a>
           </div>
         </div>
-      </div>
-      
-      <div class="col-lg-6">
-        <div class="map_container">
-          <h3>Find Us</h3>
-          <!-- Google Maps iframe - Replace the src with your actual Google Maps embed code -->
-          <div class="google_map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254167.1540976342!2d6.778167235955367!3d5.513199969322044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104259980202a4a1%3A0x2b97fd8924660eb1!2sOwerri%2C%20Imo!5e0!3m2!1sen!2sng!4v1743537530959!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- Footer Section -->
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <div class="footer_about">
-          <img src="./images/IMG-20250331-WA0003.jpg" alt="Logo" class="footer-logo">
-          <p>
-            A brand that hosts trade shows within high institutions globally to enable students to buy products at prices lower than the regular market price, helping small business owners achieve their sales goals.
-          </p>
+        <!-- Event 2 -->
+        <div class="event_card" data-aos="fade-up" data-aos-delay="200">
+          <div class="event_date">
+            <span class="day">22</span>
+            <span class="month">JUL</span>
+            <span class="year">2023</span>
+          </div>
+          <div class="event_details">
+            <h3 class="event_title">Silo Campus Tradefair uniport edition</h3>
+            <div class="event_meta">
+              <p><i class="bi bi-clock"></i> 09:00 AM - 3:00 PM</p>
+              <p><i class="bi bi-geo-alt"></i> Old convention Arena</p>
+            </div>
+            <p class="event_description">
+              A hands-on workshop for aspiring tech entrepreneurs. Learn about
+              funding opportunities, product development, and go-to-market
+              strategies from successful founders.
+            </p>
+            <a href="#" class="event_button">Register Now</a>
+          </div>
         </div>
-      </div>
-      
-      <div class="col-lg-2 col-md-6">
-        <div class="footer_links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#event">About Us</a></li>
-            <li><a href="#mission">Mission</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="col-lg-3 col-md-6">
-        <div class="footer_events">
-          <h4>Upcoming Events</h4>
-          <ul>
-            <li>
-              <span class="event_date">JUN 2-3, 2025</span>
-              <a href="#">Business Innovation Summit</a>
-            </li>
-            <li>
-              <span class="event_date">JUL 22, 2023</span>
-              <a href="#">Silo Campus Tradefair Uniport</a>
-            </li>
-            <li>
-              <span class="event_date">AUG 10, 2023</span>
-              <a href="#">Global Trade Expo</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="col-lg-3 col-md-6">
-        <div class="footer_newsletter">
-          <h4>Newsletter</h4>
-          <p>Subscribe to our newsletter for updates on upcoming trade fairs and events.</p>
-          <form>
-            <input type="email" placeholder="Your Email Address">
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-12">
-        <div class="copyright">
-          <p>&copy; 2025 Silo Trade Fair. All Rights Reserved.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
 
-  
-  <script src="./js/index.js"></script>
+        <!-- Event 3 -->
+        <div class="event_card" data-aos="fade-up" data-aos-delay="400">
+          <div class="event_date">
+            <span class="day">10</span>
+            <span class="month">AUG</span>
+            <span class="year">2023</span>
+          </div>
+          <div class="event_details">
+            <h3 class="event_title">Global Trade Expo</h3>
+            <div class="event_meta">
+              <p><i class="bi bi-clock"></i> 8:00 AM - 6:00 PM</p>
+              <p>
+                <i class="bi bi-geo-alt"></i> International Trade Center, Port
+                Harcourt
+              </p>
+            </div>
+            <p class="event_description">
+              Connect with international buyers, suppliers, and partners at this
+              premier trade exhibition. Showcase your products and discover new
+              market opportunities.
+            </p>
+            <a href="#" class="event_button">Register Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="vendor_consideration" data-aos="fade-up" data-aos-delay="600">
+        <h3 class="consideration_title">Vendors Consideration</h3>
+        <p class="consideration_text">
+          Because this is not a city trade fair, we recommend that vendors put
+          certain things into consideration before registering for the fair:
+        </p>
+        <ol class="consideration_text">
+          <li>
+            <strong>Product type:</strong> Your product should be a type of product that would
+            be important for students.
+          </li>
+          <li>
+            <strong>Freebies:</strong> We recommend that vendors should give freebies (no matter
+            how small) to every customer, it's a way of attracting <span class="emoji">🧲</span> people to
+            your stand.
+          </li>
+          <li>
+            <strong>Price:</strong> We advise vendors to put their prices on consideration
+            before registering for the event. You need to understand that the
+            student Market is different from the city market.
+          </li>
+        </ol>
+      </div>
+      
+
+      <div class="getTicket text-light text-capitalize">
+        <h1 class="text-light">Get Tickets now</h1>
+        <p>
+          Secure your spot to learn scaling strategies from <br />top industry
+          leaders, connect with growth-driven entrepreneurs, and unlock tools to
+          10x your business. Limited seats available!
+        </p>
+        <br />
+        <a href="" class="buy_ticket">buy ticket </a>
+      </div>
+    </section>
+    <!-- Contact Us Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center mb-5">
+            <h1 class="contact_title">contact <span>us</span></h1>
+            <p class="contact_paragraph">
+              Have questions about our trade fairs or want to participate? Reach
+              out to us through any of the channels below. We're here to help
+              you make the most of our events.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="contact_info" data-aos="zoom-in" data-aos-delay="100">
+              <div class="info_item">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div>
+                  <h3>Our Location</h3>
+                  <p>
+                    53 control avenue behind Arizona hotel, Owerri, IMO state
+                  </p>
+                </div>
+              </div>
+
+              <div class="info_item">
+                <i class="bi bi-telephone-fill"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+234 703 864 3290</p>
+                  <p>+234 904 301 5351</p>
+                </div>
+              </div>
+
+              <div class="info_item">
+                <i class="bi bi-envelope-fill"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>silocampustradefair@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="info_item">
+                <i class="bi bi-clock-fill"></i>
+                <div>
+                  <h3>Office Hours</h3>
+                  <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                  <p>Saturday: 10:00 AM - 2:00 PM</p>
+                </div>
+              </div>
+
+              <div class="social_media">
+                <h3>Connect With Us</h3>
+                <div class="social_icons">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61569059115194&mibextid=JRoKGi"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a
+                    href="https://www.instagram.com/silocampustradefair/profilecard/?igsh=Mjh6MXB6bjJ2YWZq"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="map_container" data-aos="zoom-in" data-aos-delay="200">
+              <h3>Find Us</h3>
+              <!-- Google Maps iframe - Replace the src with your actual Google Maps embed code -->
+              <div class="google_map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254167.1540976342!2d6.778167235955367!3d5.513199969322044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104259980202a4a1%3A0x2b97fd8924660eb1!2sOwerri%2C%20Imo!5e0!3m2!1sen!2sng!4v1743537530959!5m2!1sen!2sng"
+                  width="100%"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer_about">
+              <img src="./images/logo.png" alt="Logo" class="footer-logo" />
+              <p>
+                A brand that hosts trade shows within high institutions globally
+                to enable students to buy products at prices lower than the
+                regular market price, helping small business owners achieve
+                their sales goals.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <div class="footer_links">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#event">About Us</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer_events">
+              <h4>Upcoming Events</h4>
+              <ul>
+                <li>
+                  <span class="event_date">JUN 2-3, 2025</span>
+                  <a href="#">Business Innovation Summit</a>
+                </li>
+                <li>
+                  <span class="event_date">JUL 22, 2023</span>
+                  <a href="#">Silo Campus Tradefair Uniport</a>
+                </li>
+                <li>
+                  <span class="event_date">AUG 10, 2023</span>
+                  <a href="#">Global Trade Expo</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer_newsletter">
+              <h4>Newsletter</h4>
+              <p>
+                Subscribe to our newsletter for updates on upcoming trade fairs
+                and events.
+              </p>
+              <form>
+                <input type="email" placeholder="Your Email Address" />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="copyright">
+              <p>&copy; 2025 Silo Trade Fair. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+        mirror: false,
+      });
+    </script>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </html>
