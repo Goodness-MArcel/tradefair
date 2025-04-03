@@ -1,25 +1,32 @@
-
-
 document.addEventListener('DOMContentLoaded', function() {
-// Get the navbar element
-const navbar = document.querySelector('.navbar');
-
-// Function to handle scroll event
-function handleScroll() {
-  if (window.scrollY > 50) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
+  // Get the navbar element
+  const navbar = document.querySelector('.navbar');
+  const navLinks = document.querySelectorAll('.nav-link');
+  
+  // Function to handle scroll event
+  function handleScroll() {
+      if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+          // No need to modify classes on individual links
+          // as we'll handle this in CSS
+      } else {
+          navbar.classList.remove('scrolled');
+          // Ensure links have the newcolor class when at the top
+          navLinks.forEach(link => {
+              link.classList.add('newcolor');
+          });
+      }
   }
-  console.log("hello")
-}
 
-// Add scroll event listener
-window.addEventListener('scroll', handleScroll);
+  // Add scroll event listener
+  window.addEventListener('scroll', handleScroll);
 
-// Call once on page load to set initial state
-handleScroll();
+  // Call once on page load to set initial state
+  handleScroll();
 });
+
+// Rest of your JavaScript remains unchanged
+
 
 // Counter animation function
 document.addEventListener('DOMContentLoaded', function() {

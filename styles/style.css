@@ -65,15 +65,19 @@ body {
 }
 
 .navbar-nav .nav-link {
-    color:blue;
+    color:white !important;
     font-size: 13px;
     text-transform: uppercase;
     padding: 8px 15px;
     transition: all 0.3s ease;
 }
+.navbar-nav .nav-link.newcolor {
+  color: white !important;
+}
+
 
 .navbar-nav .nav-link:hover {
-    color:black;
+    color:blue;
 }
 
 .navbar-toggler {
@@ -272,14 +276,7 @@ section.mission .about_mission span {
     padding-block: 2rem;
 }
 .goal_container .goals{
-    /* border: thin solid black; */
     width:calc(100% - 1rem);
-    /* height: auto; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center; */
-    /* padding: 20px; */
     border-radius: 7px;
     place-content: center !important;
     border: thin solid blue !important;
@@ -289,19 +286,14 @@ section.mission .about_mission span {
     width: 90px;
     height: 40px;
     margin: 0 auto;
-    /* border: thin solid rgb(202, 48, 48); */
 }
 .goals .goal_item{
-    /* border: thin solid greenyellow; */
     height: 200px;
-
 }
 .goals .goal_item h2{
     color: blue;
     font-size: 1.5rem;
 }
-
-/* Event Schedules Section Styles */
 section.schedule {
     padding: 50px 0;
     background-color: #fff;
@@ -475,7 +467,7 @@ section.schedule .about_schedule span {
     font-weight: 600;
   }
   
-  /* Style the numbered points */
+  
   .vendor_consideration ol {
     padding-left: 20px;
     margin-top: 15px;
@@ -487,7 +479,6 @@ section.schedule .about_schedule span {
     padding-left: 5px;
   }
   
-  /* Emoji styling */
   .consideration_text .emoji {
     font-size: 18px;
     vertical-align: middle;
@@ -775,9 +766,12 @@ section.schedule .about_schedule span {
 @media screen and (min-width: 1024px) {
     .navbar.scrolled {
         background-color: white !important;
-        color: blue !important;
+
         box-shadow: 0 2px 10px rgba(69, 65, 65, 0.1);
     }
+    .navbar.scrolled .nav-link {
+      color: #1e40af !important; /* Blue color when scrolled */
+  }
     .hero_content {
         width: 50%;
         margin: 0 auto;
