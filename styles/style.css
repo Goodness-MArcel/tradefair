@@ -93,12 +93,7 @@ body {
     font-family: "Lora", serif;
     text-transform: uppercase;
 }
-/* Fix for hero content positioning with AOS */
-/* .hero_section .hero_content {
-    text-align: center;
-    margin-top: 200px;
-    color: white;
-} */
+
 .hero_section .hero_content {
     opacity: 1;
     transform: none;
@@ -119,7 +114,7 @@ body {
 .hero_section [data-aos=fade-up] {
     transform: translate3d(0, 0, 0);
 }
-.hero_content a[href="/buy_ticket"] {
+.hero_content a.form {
     padding: 12px 25px;
     background-color: blue;
     text-decoration: none;
@@ -129,7 +124,7 @@ body {
     transition: all 0.3s ease-in-out; /* Fixed duration */
 }
 
-.hero_content a[href="/buy_ticket"]:hover {
+.hero_content a.form:hover {
     border-radius: 5px;
     background-color: #520d1c;
 }
@@ -156,6 +151,8 @@ section.event .about_event {
 section.event .about_event span {
     color:blue;
 } 
+
+
 .counter_section{
     /* border: thin solid red; */
     display: flex;
@@ -761,6 +758,21 @@ section.schedule .about_schedule span {
     .event_meta {
         flex-direction: row;
         gap: 20px;
+    }
+
+    .featured-event-details {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .featured-event-info {
+      flex: 2;
+    }
+    
+    .featured-event-cta {
+      flex: 1;
+      margin-top: 0;
     }
 }
 @media screen and (min-width: 1024px) {
