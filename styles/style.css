@@ -49,6 +49,18 @@ body {
   z-index: -1;
 }
 
+.form {
+  display: inline-block;
+  animation: bounce 18s infinite; /* Adjust time (2s = faster, 5s = slower) */
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  30% { transform: translateY(-15px) scale(1.1); } /* Stretch up */
+  50% { transform: translateY(0) scale(0.95); } /* Squash on landing */
+  70% { transform: translateY(-7px) scale(1.05); } /* Mini bounce */
+}
+
 .navbar {
     padding: 15px 0;
     border-bottom: thin solid rgb(146, 144, 144);
@@ -96,7 +108,7 @@ body {
   font-family: 'Poppins', sans-serif;
     font-size: 38px;
     font-weight: 700;
-    /* margin-top: 10px; */
+    margin:0;
     text-align: center;
     text-transform: capitalize;
     letter-spacing: 5px;
@@ -174,7 +186,7 @@ section.event .about_event span {
     padding-block: 2rem;
 }  
 .counter_section .counter{
-    flex: 0 0 calc(100% - 1.3rem);
+    flex: 0 0 calc(20% - 1.3rem);
     /* border: thin solid black; */
     display: flex;
     flex-direction: column;
@@ -184,6 +196,33 @@ section.event .about_event span {
 }
 .counter .counter_head{
     color:blue;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.counter_section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem; /* Reduced gap to accommodate separators */
+  width: 80%;
+  margin: auto;
+  padding-block: 2rem;
+}
+
+.counter_separator {
+  font-size: 3rem;
+  font-weight: 700;
+  color: blue;
+  display: flex;
+  align-items: center;
+  margin-top: -50px; /* Adjust to align with counter numbers */
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
 }
 
 /* Mission Section Styles */
@@ -404,6 +443,7 @@ section.schedule .about_schedule span {
     color: #555;
     margin-bottom: 20px;
     line-height: 1.6;
+    text-align: start;
 }
 .event_meta .bi{
     color: blue;
@@ -749,6 +789,19 @@ section.schedule .about_schedule span {
     .footer_about, .footer_links, .footer_events, .footer_newsletter {
       margin-bottom: 40px;
     }
+    .counter_section {
+      gap: 0.3rem;
+      margin-top: 15px;
+  }
+  
+  .counter_section .counter {
+      flex: 0 0 calc(20% - 0.8rem);
+  }
+  
+  .counter_separator {
+      font-size: 2rem;
+      margin-top: -60px;
+  }
   }
   /* Brand text styling */
 .brand-container {
@@ -851,10 +904,12 @@ section.schedule .about_schedule span {
     }
     .counter_section{
         padding-block: 4rem;
+     
     }
     .counter_section .counter{
         flex: 0 0 calc(25% - 1.3rem);
     }
+    
     
     .mission_points .mission_item {
         flex: 0 0 calc(45% - 1.3rem);
