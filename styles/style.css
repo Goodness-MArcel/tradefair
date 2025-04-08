@@ -69,6 +69,9 @@ body {
 
 .navbar-brand {
     padding: 0;
+    place-self: start;
+    position: relative;
+    left: -18px;
 }
 .navbar-toggler-icon{
     border: thi solid black;
@@ -162,12 +165,12 @@ section.event {
     text-align: center;
 }
 section.event .about_event {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 20px;
     text-align: center;
     margin-top: 70px;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 section.event .about_event span {
     color:blue;
@@ -181,7 +184,7 @@ section.event .about_event span {
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    width: 80%;
+    width: 100% !important;
     margin: auto;
     padding-block: 2rem;
 }  
@@ -197,7 +200,7 @@ section.event .about_event span {
 .counter .counter_head{
     color:blue;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.6rem;
 }
 
 .counter_section {
