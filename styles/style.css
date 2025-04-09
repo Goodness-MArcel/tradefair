@@ -177,9 +177,10 @@ section.event .about_event {
     text-align: center;
     margin-top: 70px;
     text-transform: uppercase;
+    color: #1e40af;
 }
 section.event .about_event span {
-    color:blue;
+    color:black;
 } 
 
 
@@ -203,7 +204,7 @@ section.event .about_event span {
 
 }
 .counter .counter_head{
-    color:blue;
+    color:#1e40af;
     font-weight: 700;
     font-size: 2.6rem;
 }
@@ -222,7 +223,7 @@ section.event .about_event span {
 .counter_separator {
   font-size: 3rem;
   font-weight: 700;
-  color: blue;
+  color: #1e40af;
   display: flex;
   align-items: center;
   margin-top: -50px; /* Adjust to align with counter numbers */
@@ -240,7 +241,7 @@ section.event .about_event span {
 .past_tradefair_title {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: blue;
+  color: #1e40af;
   font-size: 3rem;
   font-weight: 700;
 }
@@ -248,7 +249,7 @@ section.event .about_event span {
   color: black;
 }
 .past_event_img{
-  color: blue;
+  color: #1e40af;
   font-size: 2rem;
   font-weight: 700;
 }
@@ -302,7 +303,7 @@ section.mission .about_mission {
 }
 
 section.mission .about_mission span {
-    color: blue;
+    color: #1e40af;
 }
 
 .mission_paragraph {
@@ -319,7 +320,7 @@ section.mission .about_mission span {
   font-family: 'Poppins', sans-serif;
 }
 .mission_points span{
-  color: blue;
+  color: #1e40af;
 }
 
 #become_a_sponsor{
@@ -340,7 +341,7 @@ section.mission .about_mission span {
 }
 
 .mission_item .mission_head {
-    color:blue;
+    color:#1e40af;
     margin-bottom: 15px;
     text-transform: capitalize;
 }
@@ -369,7 +370,7 @@ section.mission .about_mission span {
     font-family: 'Poppins', sans-serif;
 }
 .goals_head span{
-    color: blue;
+    color: #1e40af;
 }
 .mission .goal_container {
     /* border: thin solid black; */
@@ -397,9 +398,10 @@ section.mission .about_mission span {
 }
 .goals .goal_item{
     height: 200px;
+    place-content: center !important;
 }
 .goals .goal_item h2{
-    color: blue;
+    color: #1e40af;
     font-size: 1.5rem;
 }
 section.schedule {
@@ -423,7 +425,7 @@ section.schedule .about_schedule {
 }
 
 section.schedule .about_schedule span {
-    color: blue;
+    color: #1e40af;
 }
 
 .schedule_paragraph {
@@ -456,7 +458,7 @@ section.schedule .about_schedule span {
 }
 
 .event_date {
-    background-color: blue;
+    background-color: #1e40af;
     color: white;
     padding: 15px;
     text-align: center;
@@ -620,7 +622,7 @@ section.schedule .about_schedule span {
 }
 .buy_ticket{
     padding: 10px 20px;
-    background-color: blue;
+    background-color: #1e40af;
     color: white;
     text-decoration: none;
     text-transform: capitalize;
@@ -797,6 +799,8 @@ section.schedule .about_schedule span {
     font-size: 12px;
     color:white;
     margin-bottom: 3px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
   }
   
   .footer_newsletter p {
@@ -877,7 +881,7 @@ section.schedule .about_schedule span {
 }
 
 .brand-text {
-  color:blue !important;
+  color: #1e40af!important;
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 600;
