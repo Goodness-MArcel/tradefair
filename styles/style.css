@@ -350,60 +350,40 @@ section.mission .about_mission span {
     color: #555;
 }
 
-/* Carousel Styles */
-#tradeCarousel {
-    margin-top: 30px;
-    max-width: 800px;
-}
-
-#tradeCarousel .carousel-item img {
-    border-radius: 8px;
-    height: 400px;
-    object-fit: cover;
-}
 .goals_head{
     margin-top: 50px;
     text-align: center;
     font-weight: 700;
-    margin-bottom: 20px;
     text-transform: capitalize;
     font-family: 'Poppins', sans-serif;
 }
 .goals_head span{
     color: #1e40af;
 }
-.mission .goal_container {
-    /* border: thin solid black; */
-    height: auto;
-    width: 90%;
-    margin: 0 auto;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    padding-block: 2rem;
-}
-.goal_container .goals{
-    width:calc(100% - 1rem);
-    border-radius: 7px;
-    place-content: center !important;
-    border: thin solid blue !important;
-}
 
+
+.goal_text{
+ margin-top: 10px;
+  text-align: start !important;
+}
+.goal_text::before{
+  content: '📌';
+  position: absolute;
+  left: 0px;
+  margin-right: 0;
+}
+.goals_list{
+  list-style: none;
+  position: relative;
+  margin: 0;
+}
 .goal_container .svgbox{
     width: 90px;
     height: 40px;
     margin: 0 auto;
 }
-.goals .goal_item{
-    height: 200px;
-    place-content: center !important;
-}
-.goals .goal_item h2{
-    color: #1e40af;
-    font-size: 1.5rem;
-}
+
+
 section.schedule {
     padding: 50px 0;
     background-color: #fff;
