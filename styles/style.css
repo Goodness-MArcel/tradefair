@@ -67,6 +67,7 @@ body {
     background-color: transparent;
 }
 
+
 .navbar-brand {
     padding: 0;
     place-self: start;
@@ -190,7 +191,6 @@ section.event .about_event span {
 }  
 .counter_section .counter{
     flex: 0 0 calc(20% - 1.3rem);
-    /* border: thin solid black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,6 +228,52 @@ section.event .about_event span {
   50% { opacity: 0.5; }
 }
 
+.past_tradefair {
+  padding: 50px 0;
+}
+
+.past_tradefair_title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: blue;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.past_tradefair_title span{
+  color: black;
+}
+.past_event_img{
+  color: blue;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.pictures img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pictures img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.video_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video_container video {
+  width: 100%;
+  max-width: 50%; /* For large screens */
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
 /* Mission Section Styles */
 section.mission {
     padding: 50px 0;
@@ -259,15 +305,24 @@ section.mission .about_mission span {
     margin: 20px auto;
 }
 
-.mission_points {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1.5rem;
-    width: 80%;
-    margin: auto;
-    padding-block: 2rem;
+.mission_points h1 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+}
+.mission_points span{
+  color: blue;
+}
+
+#become_a_sponsor{
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  margin-top: 40px;
+  text-transform: uppercase;
 }
 
 .mission_points .mission_item {
@@ -804,6 +859,9 @@ section.schedule .about_schedule span {
   .counter_separator {
       font-size: 2rem;
       margin-top: -60px;
+  }
+  .video_container video {
+    max-width: 100%; /* For mobile devices */
   }
   }
   /* Brand text styling */
