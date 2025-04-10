@@ -113,14 +113,14 @@ html{
 }
 
 
-.hero_content h1{
+.hero_content h2{
   font-family: 'Poppins', sans-serif;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 700;
     margin:0;
     text-align: center;
-    text-transform: capitalize;
-    letter-spacing: 2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .hero_section .hero_content {
