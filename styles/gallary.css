@@ -137,11 +137,7 @@
     text-shadow: 2px 2px 5px blue; /* Blue text shadow */
 }
 
-iframe{
-  display: block;
-  margin: 50px auto;
-  width: 50%;
-}
+
 .event_month{
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -150,8 +146,3 @@ iframe{
   font-weight: 600;
 }
 
-@media screen and (max-width: 768px) {
-  iframe{
-    width: 100%;
-  }
-}

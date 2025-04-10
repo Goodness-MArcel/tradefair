@@ -115,12 +115,12 @@ html{
 
 .hero_content h1{
   font-family: 'Poppins', sans-serif;
-    font-size: 38px;
+    font-size: 32px;
     font-weight: 700;
     margin:0;
     text-align: center;
     text-transform: capitalize;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 }
 
 .hero_section .hero_content {
@@ -373,7 +373,7 @@ section.mission .about_mission span {
   margin-right: 0;
 }
 .goals_list{
-  list-style: none;
+  list-style: none !important;
   position: relative;
   margin: 0;
 }
@@ -383,7 +383,12 @@ section.mission .about_mission span {
     margin: 0 auto;
 }
 
-
+.youtube{
+  display: block;
+  margin: 50px auto;
+  width: 100%;
+  max-width: 800px;
+}
 section.schedule {
     padding: 50px 0;
     background-color: #fff;
@@ -634,81 +639,6 @@ section.schedule .about_schedule span {
     transform: translateY(-3px);
   }
   
-  .map_container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    height: 100%;
-  }
-  
-  .map_container h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 20px;
-  }
-  
-  .google_map {
-    border-radius: 8px;
-    overflow: hidden;
-    height: calc(100% - 50px);
-  }
-  
-  .google_map iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-  
-  /* Footer Styles */
-  .footer {
-    background-color: #212529;
-    color: #fff;
-    padding: 60px 0 20px;
-  }
-  
-  .footer_about img.footer-logo {
-    height: 120px;
-    margin-bottom: 20px;
-  }
-  
-  .footer_about p {
-    color: #adb5bd;
-    margin-bottom: 20px;
-  }
-  
-  .footer_links h4,
-  .footer_events h4,
-  .footer_newsletter h4 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 25px;
-    color: #fff;
-  }
-  
-  .footer_links ul,
-  .footer_events ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer_links ul li,
-  .footer_events ul li {
-    margin-bottom: 10px;
-  }
-  
-  .footer_links ul li a,
-  .footer_events ul li a {
-    color: #adb5bd;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .footer_links ul li a:hover,
-  .footer_events ul li a:hover {
-    color: #fff;
-  }
   #event_listone{
     list-style: none;
     margin: 0;
@@ -726,58 +656,7 @@ section.schedule .about_schedule span {
     letter-spacing: 1px;
   }
 
-
-
-
-
-
-
-
-
-
-  
-  .footer_newsletter p {
-    color: #adb5bd;
-    margin-bottom: 15px;
-  }
-  
-  .footer_newsletter form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .footer_newsletter input {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    margin-bottom: 10px;
-  }
-  
-  .footer_newsletter button {
-    padding: 10px 15px;
-    background-color: #1e40af;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .footer_newsletter button:hover {
-    background-color: #0f2b76;
-  }
-  
-  .copyright {
-    text-align: center;
-    padding-top: 30px;
-    margin-top: 30px;
-    border-top: 1px solid #343a40;
-  }
-  
-  .copyright p {
-    color: #adb5bd;
-    margin: 0;
-  }
+ 
 
 
 /* Media Queries for Event Schedules */
@@ -888,7 +767,6 @@ section.schedule .about_schedule span {
       margin-top: 0;
     } */
     .footer_eventsEdit{
-      border: thin solid red;
       width: 100% !important;
     }
     #event_listone{

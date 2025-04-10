@@ -67,6 +67,44 @@ body {
     margin-bottom: 30px;
     border-radius: 0 0 10px 10px;
 }
+
+
+/* Sponsor banner image sizing */
+.sponsors-banner {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sponsors-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.uniport-map{
+  border: thin solid red;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .sponsors-banner {
+    max-width: 600px; /* Smaller on tablets */
+  }
+}
+
+@media (min-width: 992px) {
+  .sponsors-banner {
+    max-width: 700px; /* Medium size on smaller laptops */
+  }
+}
+
+@media (min-width: 1200px) {
+  .sponsors-banner {
+    max-width: 800px; /* Larger on big screens but still contained */
+  }
+}
+
+
 /* 
 .vendor_consideration {
     background-color: #f8f9fa;
