@@ -512,70 +512,6 @@ section.schedule .about_schedule span {
     color: white;
 }
 
-/* Vendor Consideration Section Styling */
-.vendor_consideration {
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    padding: 30px;
-    margin: 40px auto;
-    max-width: 90%;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .vendor_consideration:hover {
-    transform: translateY(-5px);
-  }
-  
-  .consideration_title {
-    color: #0047ab;
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-transform: capitalize;
-    position: relative;
-    padding-bottom: 10px;
-  }
-  
-  .consideration_title:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 60px;
-    height: 3px;
-    background-color: #0047ab;
-  }
-  
-  .consideration_text {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555;
-  }
-  
-  .consideration_text strong {
-    color: #0047ab;
-    font-weight: 600;
-  }
-  
-  
-  .vendor_consideration ol {
-    padding-left: 20px;
-    margin-top: 15px;
-  }
-  
-  .vendor_consideration li {
-    margin-bottom: 15px;
-    position: relative;
-    padding-left: 5px;
-  }
-  
-  .consideration_text .emoji {
-    font-size: 18px;
-    vertical-align: middle;
-    margin: 0 3px;
-  }
-  
 .getTicket{
     height: 400px;
     background-image: url(../images/Silo75.jpg);
@@ -773,7 +709,14 @@ section.schedule .about_schedule span {
   .footer_events ul li a:hover {
     color: #fff;
   }
-  
+  #event_listone{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .event_month{
+    text-decoration: none;
+  }
   .event_date {
     display: block;
     font-size: 12px;
@@ -782,6 +725,16 @@ section.schedule .about_schedule span {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
   }
+
+
+
+
+
+
+
+
+
+
   
   .footer_newsletter p {
     color: #adb5bd;
@@ -902,7 +855,7 @@ section.schedule .about_schedule span {
 }
 
 @media screen and (min-width: 768px) {
-    .event_card {
+    /* .event_card {
         flex-direction: row;
     }
     
@@ -933,8 +886,21 @@ section.schedule .about_schedule span {
     .featured-event-cta {
       flex: 1;
       margin-top: 0;
+    } */
+    .footer_eventsEdit{
+      border: thin solid red;
+      width: 100% !important;
+    }
+    #event_listone{
+      display: flex;
+      justify-content: space-evenly;
+      gap: 20px;
+      width: 100% !important;
+      list-style: none;
     }
 }
+
+
 @media screen and (min-width: 1024px) {
     .navbar.scrolled {
         background-color: white !important;
