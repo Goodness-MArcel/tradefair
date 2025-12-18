@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Rest of your JavaScript remains unchanged
 
 function updateCountdown() {
-    const targetDate = new Date("June 2, 2025 00:00:00").getTime();
+  const targetDate = new Date("January 27, 2026 00:00:00").getTime();
     const now = new Date().getTime();
     const distance = targetDate - now;
   
@@ -47,7 +47,7 @@ function updateCountdown() {
     // Stop countdown if reached
     if (distance < 0) {
       clearInterval(countdownTimer);
-      document.querySelector(".counter_section").innerHTML = "<h2>June 2, 2025, has arrived! 🎉</h2>";
+      document.querySelector(".counter_section").innerHTML = "<h2>January 27, 2026, has arrived!</h2>";
     }
   }
   

@@ -183,6 +183,36 @@ section.event .about_event span {
     color:black;
 } 
 
+/* Upcoming tradefair cards under the event section */
+.event_intro .card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.event_intro .card-text {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.event_intro .badge {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.event_intro .click-arrow {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 1.2rem;
+  color: #1e40af;
+}
+
+.event_intro a:hover .click-arrow {
+  transform: translateX(3px);
+  transition: transform 0.2s ease;
+}
+
 
 .counter_section{
     /* border: thin solid red; */
