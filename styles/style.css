@@ -83,8 +83,8 @@ html{
     border: thi solid black;
 }
 .logo-img {
-    width: 80px;
-    height: 80px;
+  width: 100px;
+  height: 100px;
     object-fit: contain;
 }
 
@@ -737,7 +737,7 @@ section.schedule .about_schedule span {
 /* Mobile navbar styling */
 @media (max-width: 991.98px) {
   .navbar.navbar-dark.bg-dark {
-    background-color: white !important;
+    background-color: #1e40af !important;
   }
   
   .navbar-dark .navbar-toggler {
@@ -753,7 +753,7 @@ section.schedule .about_schedule span {
   }
   
   .navbar-dark .navbar-nav .nav-link {
-    color: #333 !important;
+    color: #ffffff !important;
     border-bottom: thin solid #bfb5b5 !important;
   }
   
