@@ -74,18 +74,17 @@ html{
 
 
 .navbar-brand {
-    padding: 0;
-    place-self: start;
-    position: relative;
-    left: -18px;
+  padding: 0;
+  place-self: start;
 }
 .navbar-toggler-icon{
     border: thi solid black;
 }
 .logo-img {
-  width: 100px;
-  height: 100px;
-    object-fit: contain;
+  height: 70px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .navbar-nav .nav-link {
